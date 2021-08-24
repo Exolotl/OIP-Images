@@ -13,7 +13,7 @@ from tflite_model_maker.image_classifier import DataLoader
 
 import matplotlib.pyplot as plt
 
-image_path = os.path.join(os.path.dirname(__file__), 'water_images')
+image_path = os.path.join(os.path.dirname(__file__), 'training')
 
 data = DataLoader.from_folder(image_path)
 train_data, test_data = data.split(0.8)
